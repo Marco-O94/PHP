@@ -107,7 +107,7 @@ if(is_numeric($num) == true) {
 }
 
 /* ========= LE FUNZIONI PER GESTIONE STRINGHE ========= */
-
+/* === trim() ===  (Pagina: 153) */
 
 
 
