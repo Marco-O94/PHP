@@ -52,11 +52,11 @@ if(empty($var_test) == true) {
 
 $var_esistente = "Ciao, esisto!";
 
-if(isset($var_esistente) == true) {
+if(isset($var_esistente)) {
 echo $var_esistente;
 }
 
-if(isset($var_nonEsistente) == true) {
+if(isset($var_nonEsistente)) {
     echo $var_nonEsistente;
 } else {
     echo "<br>La variabile var_nonEsistente non esiste";
@@ -86,7 +86,7 @@ unset($a);
 */
 $st = "Ciao mondo!";
 echo $st . "<br>";
-if(is_string($st) == true) {
+if(is_string($st)) {
     echo "La variabile è una stringa";
 }else{
     echo "La variabile non è una stringa";
@@ -100,7 +100,7 @@ if(is_string($st) == true) {
 */
 $num = 5;
 echo $num . "<br>";
-if(is_numeric($num) == true) {
+if(is_numeric($num)) {
     echo "La variabile è un numero";
 }else{
     echo "La variabile non è un numero";
