@@ -105,9 +105,28 @@ if(is_numeric($num)) {
 }else{
     echo "La variabile non è un numero";
 }
-
+?>
+<h3>La funzione trim()</h3>
+<?php
 /* ========= LE FUNZIONI PER GESTIONE STRINGHE ========= */
-/* === trim() ===  (Pagina: 153) */
+/* === trim() ===
+* La funzione trim() permette la rimozione di specifici caratteri presenti all'inizio ed alla fine di una stringa.
+* La sintassi è la seguente: string trim(variabileStringa, [elencoCaratteriDaRimuovere]).
+* In assenza di esplicite indicazioni dei caratteri da rimuovere la funzione trim rimuoverà i seguenti caratteri:
+* - Spazio " "
+* - Carattere tab "\t"
+* - new line "\n"
+* - Carriage return "\r"
+* - Nul "\0"
+* - tab verticale "\x0B"
+Esempio:
+*/
+
+$str = " Hello World! ";
+echo "Without trim: " . $str;
+echo "<br>";
+echo "With trim: " . trim($str);
+
 
 
 
